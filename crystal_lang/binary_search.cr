@@ -1,4 +1,4 @@
-def binary_search(list, target_item)
+def binary_search(list : Array(Number), target_item : Number)
   # keep track of which part of the list to search in
   low_index = 0
   high_index = list.size - 1

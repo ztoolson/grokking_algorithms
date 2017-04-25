@@ -1,4 +1,4 @@
-def binary_search_recursive(list, target_item, low_index, high_index)
+def binary_search_recursive(list : Array(Number), target_item : Number, low_index : Int32, high_index : Int32)
   return nil if low_index > high_index
 
   mid_index = (low_index + high_index) / 2
