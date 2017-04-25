@@ -1,4 +1,4 @@
-def binary_search(list : Array(Number), target_item : Number)
+def binary_search_iterative(list : Array(Number), target_item : Number)
   # keep track of which part of the list to search in
   low_index = 0
   high_index = list.size - 1
@@ -11,7 +11,7 @@ def binary_search(list : Array(Number), target_item : Number)
       return mid_index
     end
 
-    if guess > target_item 
+    if guess > target_item
       high_index = mid_index - 1
     else
       low_index = mid_index + 1
@@ -23,5 +23,5 @@ end
 
 my_list = [1, 3, 5, 7, 9]
 
-puts binary_search(my_list, 3) # => 1
-puts "nil" if  binary_search(my_list, -1).nil? # => nil
+puts binary_search_iterative(my_list, 3) # => 1
+puts "nil" if  binary_search_iterative(my_list, -1).nil? # => nil
