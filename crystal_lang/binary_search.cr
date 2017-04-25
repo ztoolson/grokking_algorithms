@@ -17,7 +17,7 @@ def binary_search(list, target_item)
       low_index = mid_index + 1
     end
   end
-  
+
   return nil # item doesn't exist in list
 end
 
